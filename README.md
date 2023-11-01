@@ -1,6 +1,3 @@
-Learning Objectives
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-
 General
 Who designed and implemented the original Unix operating system
 Who wrote the first version of the UNIX shell
@@ -22,6 +19,7 @@ You will not be able to meet the objectives of this or any following project by 
 You are not allowed to publish any content of this project.
 Any form of plagiarism is strictly forbidden and will result in removal from the program.
 Requirements
+.........................................................................................................................................................
 General
 Allowed editors: vi, vim, emacs
 All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
@@ -55,6 +53,7 @@ $ echo "qwerty" | ./hsh
 $ echo "qwerty" | ./././hsh
 ./././hsh: 1: qwerty: not found
 $
+................................................................................................................................................................
 
 List of allowed functions and system calls
 access (man 2 access)
@@ -149,29 +148,7 @@ be able to move the cursor
 handle commands with arguments
 execve will be the core part of your Shell, don’t forget to pass the environ to it…
 
-julien@ubuntu:~/shell$ ./shell 
-#cisfun$ ls
-./shell: No such file or directory
-#cisfun$ /bin/ls
-barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell.c  stat.c         wait
-env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat test_scripting.sh  wait.c
-#cisfun$ /bin/ls -l
-./shell: No such file or directory
-#cisfun$ ^[[D^[[D^[[D
-./shell: No such file or directory
-#cisfun$ ^[[C^[[C^[[C^[[C
-./shell: No such file or directory
-#cisfun$ exit
-./shell: No such file or directory
-#cisfun$ ^C
-julien@ubuntu:~/shell$ echo "/bin/ls" | ./shell
-barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell.c  stat.c         wait
-env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     stat test_scripting.sh  wait.c
-#cisfun$ julien@ubuntu:~/shell$
-Repo:
-
-GitHub repository: simple_shell
-  
+.......................................................................................................................................  
 2. Simple shell 0.2
 mandatory
 Simple shell 0.1 +
@@ -180,32 +157,16 @@ Handle command lines with arguments
 Repo:
 
 GitHub repository: simple_shell
-  
+
+.................................................................................................................................................  
 3. Simple shell 0.3
 mandatory
 Simple shell 0.2 +
 
 Handle the PATH
 fork must not be called if the command doesn’t exist
-julien@ubuntu:~/shell$ ./shell_0.3
-:) /bin/ls
-barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell_0.3  stat    test_scripting.sh  wait.c
-env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     shell.c    stat.c  wait
-:) ls
-barbie_j       env-main.c  exec.c  fork.c  pid.c  ppid.c    prompt   prompt.c  shell_0.3  stat    test_scripting.sh  wait.c
-env-environ.c  exec    fork    mypid   ppid   printenv  promptc  shell     shell.c    stat.c  wait
-:) ls -l /tmp 
-total 20
--rw------- 1 julien julien    0 Dec  5 12:09 config-err-aAMZrR
-drwx------ 3 root   root   4096 Dec  5 12:09 systemd-private-062a0eca7f2a44349733e78cb4abdff4-colord.service-V7DUzr
-drwx------ 3 root   root   4096 Dec  5 12:09 systemd-private-062a0eca7f2a44349733e78cb4abdff4-rtkit-daemon.service-ANGvoV
-drwx------ 3 root   root   4096 Dec  5 12:07 systemd-private-062a0eca7f2a44349733e78cb4abdff4-systemd-timesyncd.service-CdXUtH
--rw-rw-r-- 1 julien julien    0 Dec  5 12:09 unity_support_test.0
-:) ^C
-julien@ubuntu:~/shell$ 
-Repo:
 
-GitHub repository: simple_shell
+.....................................................................................................................................................
   
 4. Simple shell 0.4
 mandatory
@@ -217,31 +178,15 @@ You don’t have to handle any argument to the built-in exit
 Repo:
 
 GitHub repository: simple_shell
+....................................................................................................................................................
   
 5. Simple shell 1.0
 mandatory
 Simple shell 0.4 +
 
 Implement the env built-in, that prints the current environment
-julien@ubuntu:~/shell$ ./simple_shell
-$ env
-USER=julien
-LANGUAGE=en_US
-SESSION=ubuntu
-COMPIZ_CONFIG_PROFILE=ubuntu
-SHLVL=1
-HOME=/home/julien
-C_IS=Fun_:)
-DESKTOP_SESSION=ubuntu
-LOGNAME=julien
-TERM=xterm-256color
-PATH=/home/julien/bin:/home/julien/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-DISPLAY=:0
-$ exit
-julien@ubuntu:~/shell$ 
-Repo:
 
-GitHub repository: simple_shell
+...................................................................................................................................................
   
 6. Simple shell 0.1.1
 #advanced
@@ -256,7 +201,7 @@ You don’t have to:
 be able to move the cursor
 Repo:
 
-GitHub repository: simple_shell
+...........................................................................................................................................................
   
 7. Simple shell 0.2.1
 #advanced
@@ -264,8 +209,7 @@ Simple shell 0.2 +
 
 You are not allowed to use strtok
 Repo:
-
-GitHub repository: simple_shell
+.........................................................................................................................................................
   
 8. Simple shell 0.4.1
 #advanced
@@ -273,14 +217,7 @@ Simple shell 0.4 +
 
 handle arguments for the built-in exit
 Usage: exit status, where status is an integer used to exit the shell
-julien@ubuntu:~/shell$ ./shell_0.4.1
-$ exit 98
-julien@ubuntu:~/shell$ echo $?
-98
-julien@ubuntu:~/shell$ 
-Repo:
-
-GitHub repository: simple_shell
+.........................................................................................................................................................
   
 9. setenv, unsetenv
 #advanced
@@ -299,7 +236,7 @@ Should print something on stderr on failure
 Repo:
 
 GitHub repository: simple_shell
-  
+.....................................................................................................................................................
 10. cd
 #advanced
 Simple shell 1.0 +
@@ -316,7 +253,7 @@ man chdir, man getcwd
 Repo:
 
 GitHub repository: simple_shell
-  
+.................................................................................................................................................
 11. ;
 #advanced
 Simple shell 1.0 +
@@ -338,7 +275,7 @@ backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tm
 backups  cache  crash  lib  local  lock  log  mail  metrics  opt  run  spool  tmp
 alex@~$
 Repo:
-
+.....................................................................................................................................................
 GitHub repository: simple_shell
   
 12. && and ||
@@ -381,7 +318,7 @@ alex@~$
 Repo:
 
 GitHub repository: simple_shell
-  
+.................................................................................................................................................
 13. alias
 #advanced
 Simple shell 1.0 +
@@ -394,7 +331,7 @@ alias name='value' [...]: Defines an alias for each name whose value is given. I
 Repo:
 
 GitHub repository: simple_shell
-  
+..................................................................................................................................................
 14. Variables
 #advanced
 Simple shell 1.0 +
@@ -416,7 +353,7 @@ julien@ubuntu:~/shell$
 Repo:
 
 GitHub repository: simple_shell
-  
+................................................................................................................................................
 15. Comments
 #advanced
 Simple shell 1.0 +
@@ -430,7 +367,7 @@ julien@ubuntu:~/shell$
 Repo:
 
 GitHub repository: simple_shell
-  
+..................................................................................................................................................
 16. File as input
 #advanced
 Simple shell 1.0 +
