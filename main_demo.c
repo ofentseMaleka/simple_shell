@@ -17,4 +17,10 @@
 /**
  * To convert numbers
  */
+
+/* declaring shell commands
+ */
+int exit(char**args);
+int cd(char**args);
+int help(char**args);i
 #endif 
