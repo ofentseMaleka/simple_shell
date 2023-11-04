@@ -14,12 +14,12 @@
 #include <fcntl.h> //for file control function and oparations//
 #include <sys/stat.h> // used for file and directory handling//
 
-/**
- * To convert numbers
- */
+void exec_com(const char *comand);
+void my_printf(char *message);
+void prompt(void);
+void rd_command(char *command,size_t size);
 
-/* declaring shell commands
- */
+/* declaring shell commands*/
 int exit(char**args);
 int cd(char**args);
 int help(char**args);i
