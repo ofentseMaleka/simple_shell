@@ -1,6 +1,7 @@
 #ifndef _SIMPLE_H
 #define _SIMPLE_H
 
+<<<<<<< HEAD
 #include <stdio.h> /*for standard input /output */
 #include <unistd.h> //used for system call: fork, exec, pipe etc //
 #include <string.h> // working with strings//
@@ -13,6 +14,20 @@
 #include <limits.h> //limits related to integral data types//
 #include <fcntl.h> //for file control function and oparations//
 #include <sys/stat.h> // used for file and directory handling//
+=======
+#include <stdio.h>
+#include <unistd.h> 
+#include <string.h> 
+#include <stdlib.h> 
+#include <sys/types.h>
+#include <errorno.h> 
+#include <perror.h>
+#include <malloc.h> 
+#include <sys/wait.h>
+#include <limits.h> 
+#include <fcntl.h>
+#include <sys/stat.h>
+>>>>>>> 93ea999b2e6235aa01594d7317fec22c24e5dc5a
 
 void exec_com(const char *comand);
 void my_printf(char *message);
