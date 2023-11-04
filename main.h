@@ -1,7 +1,7 @@
 #ifndef _SIMPLE_H
 #define _SIMPLE_H
 
-#include <stdio.h> // for standard input /output //
+#include <stdio.h> /*for standard input /output */
 #include <unistd.h> //used for system call: fork, exec, pipe etc //
 #include <string.h> // working with strings//
 #include <stdlib.h> //standard library function//
