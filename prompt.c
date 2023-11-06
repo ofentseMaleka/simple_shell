@@ -2,5 +2,5 @@
 
 void display_prompt(void)
 {
-	my_print("enter_here ");
+	my_print("enter_here$$ ");
 }	

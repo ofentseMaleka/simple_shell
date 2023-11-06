@@ -9,7 +9,13 @@
  */
 int main(void)
 {
-	char command[150];
-	while (1)
-	{
-		display_prompt();
+    char command[150];
+    while (1)
+    {
+        display_prompt();
+	rd_command(command, sizeof(command));
+        /* Rest of my  code will be here */
+    }
+    return 0;
+}
+
