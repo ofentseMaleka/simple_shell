@@ -12,7 +12,7 @@
 #include <fcntl.h>
 #include <sys/stat.h>
 
-void exec_com(const char *comand);
+void exec_com(const char *command);
 void my_print(char *output);
 void prompt(void);
 void rd_command(char *command, size_t size);
