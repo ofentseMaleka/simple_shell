@@ -17,7 +17,7 @@ const char *execute_command(const char *command) {
     /* Allocate an array to store the command arguments. */
     args = malloc(sizeof(char *) * 2);
 
-    args[0] = strdup(command);
+    args[0] = strdup(command); // Use an alternative method to duplicate the string
     args[1] = NULL;
 
     snprintf(command_path, sizeof(command_path), "/bin/%s", command);

@@ -15,6 +15,8 @@
 void exec_com(const char *command);
 void my_print(char *output);
 void prompt(void);
+void user_input(char *command, size_t size);
+void execute_command(const char *command);
 void rd_command(char *command, size_t size);
 void display_prompt(void);
 void execute_function(const char *function, char **argv);
