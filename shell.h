@@ -17,6 +17,7 @@
 
 /* list of the prototype */
 
+const char *execute_command(const char *command)
 void exec_com(const char *command);
 void my_print(char *output);
 void prompt(void);

@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 const char *execute_command(const char *command) {
-    /* Declare variables at the beginning of the function. */
+    /* Give variables at the beginning of the function. */
     char **args;
     char command_path[256];
 
