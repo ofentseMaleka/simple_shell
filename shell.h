@@ -15,6 +15,8 @@
 #include <signal.h>
 #include <sys/types.h>
 
+/* list of the prototype */
+
 void exec_com(const char *command);
 void my_print(char *output);
 void prompt(void);
@@ -25,7 +27,7 @@ void display_prompt(void);
 void execute_function(const char *function, char **argv);
 char **parse_args(const char *input); /* Forward declaration */
 
-/* Rename functions to avoid conflicts with standard library functions */
+/* Change name of  function not to cause avoid conflicts with standard library functions */
 int my_exit(char **args);
 int my_cd(char **args);
 int my_help(char **args);
