@@ -11,6 +11,9 @@
 #include <limits.h>
 #include <fcntl.h>
 #include <sys/stat.h>
+#include <dirent.h>
+#include <signal.h>
+#include <sys/types.h>
 
 void exec_com(const char *command);
 void my_print(char *output);
